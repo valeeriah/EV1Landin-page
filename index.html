@@ -1,0 +1,98 @@
+$body = @'
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas Verdes | Emprendimiento local</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#inicio" class="brand-logo">Plantas Verdes</a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Sobre nosotros</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#horarios" class="nav-link">Horarios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section id="inicio" class="hero-section">
+            <div class="container hero-content">
+                <p class="hero-label">Emprendimiento local de plantas</p>
+                <h1 class="hero-title">Llena tu espacio de vida con plantas únicas</h1>
+                <p class="hero-subtitle">Asesoramiento personalizado, entregas locales y soluciones verdes fáciles de cuidar.</p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">Contactar ahora</a>
+                    <a href="#nosotros" class="btn btn-secondary">Conocer más</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about-section">
+            <div class="container about-content">
+                <h2 class="section-title">Quiénes somos</h2>
+                <p class="section-text">Somos un emprendimiento local dedicado a la venta de plantas y accesorios de jardinería. Brindamos atención cercana para ayudarte a elegir las mejores especies según tu espacio y estilo de vida.</p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="container contact-content">
+                <div class="contact-intro">
+                    <h2 class="section-title">Formulario de contacto</h2>
+                    <p class="section-text">Escribinos y te responderemos rápido para cotizar tu pedido o agendar una visita.</p>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Nombre completo</label>
+                        <input type="text" id="contact-name" name="name" class="form-control" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="contact-email" name="email" class="form-control" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone" class="form-label">Teléfono / WhatsApp</label>
+                        <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+54 9 11 1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Mensaje</label>
+                        <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Cuéntanos qué necesitás" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-block footer-contact">
+                <h3 class="footer-title">Contacto</h3>
+                <p class="footer-text">Teléfono: +54 9 11 1234-5678</p>
+                <p class="footer-text">Email: hola@plantasverdes.com</p>
+            </div>
+            <div class="footer-block footer-socials">
+                <h3 class="footer-title">Redes sociales</h3>
+                <ul class="social-links">
+                    <li class="social-item"><a href="#" class="social-link">Instagram</a></li>
+                    <li class="social-item"><a href="#" class="social-link">Facebook</a></li>
+                    <li class="social-item"><a href="#" class="social-link">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-hours" id="horarios">
+                <h3 class="footer-title">Horarios de atención</h3>
+                <p class="footer-text">Lunes a viernes: 10:00 - 19:00</p>
+                <p class="footer-text">Sábados: 10:00 - 14:00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+'@
+Set-Content -LiteralPath 'c:\Users\gisel\OneDrive\Documentos\ev1landing-page\index.html' -Value $body -Encoding utf8
