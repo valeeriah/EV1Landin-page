@@ -1,0 +1,88 @@
+/* Variables de color para mantener la armonía */
+:root {
+    --primary-green: #0c6d31;
+    --light-green: #f4f9f4;
+    --dark-text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* Estilos para el Header */
+.site-header {
+    background-color: #684d02;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: var(--dark-text);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-green);
+}
+
+/* Estilos para el Hero */
+.hero-section {
+    padding: 120px 0;
+    background: linear-gradient(rgba(244, 249, 244, 0.8), rgba(244, 249, 244, 0.8)), 
+                url('https://images.unsplash.com/photo-1470058869958-2a77a6175f72?auto=format&fit=crop&q=80&w=1500');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+/* Tipografía */
+.section-title {
+    font-weight: 700;
+    color: var(--primary-green);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-green);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-text {
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+/* Personalización de botones */
+.btn-success {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+.btn-success:hover {
+    background-color: #1e3d1a;
+    border-color: #1e3d1a;
+}
+
+/* Card de contacto */
+.contact-card {
+    border: none;
+    border-top: 5px solid var(--primary-green);
+}
+/* Para la creación del archivo "style.css" se utulizó copilot. se obtiene el codigo mediante un prompt.
+ se le indica que busque una plantilla con diseño moderno y acogedor*/
